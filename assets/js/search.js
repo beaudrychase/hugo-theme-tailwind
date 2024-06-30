@@ -41,18 +41,18 @@
   }
 
   const resultTemplate = `
-  <article class="flex flex-col gap-y-3 p-6 mt-6 mx-2 md:mx-0 rounded-lg shadow-md bg-white dark:bg-gray-700" id="result-{{= it.index }}">
-    <h2 class="text-4xl font-semibold text-slate-800 dark:text-slate-200">
+  <article class="flex flex-col gap-y-3 p-6 mt-6 mx-2 md:mx-0 rounded-lg shadow-md bg-white dark:bg-stone-700" id="result-{{= it.index }}">
+    <h2 class="text-4xl font-semibold text-stone-800 dark:text-stone-200">
       <a href="{{= it.permalink }}">{{! it.title }}</a>
     </h2>
-    <h3 class="my-4 text-large text-slate-600 dark:text-slate-300">
+    <h3 class="my-4 text-large text-stone-600 dark:text-stone-300">
       {{! it.snippet }}
     </h3>
-    <ul class="flex flex-row flex-wrap text-slate-500 dark:text-slate-300">
+    <ul class="flex flex-row flex-wrap text-stone-500 dark:text-stone-300">
       {{~ it.categories :v }}
       <li>
         <span
-          class="text-sm mr-2 px-2 py-1 rounded border border-emerald-800 bg-emerald-800 text-slate-50">
+          class="text-sm mr-2 px-2 py-1 rounded border border-emerald-800 bg-emerald-800 text-stone-50">
           {{!v}}
         </span>
       </li>
