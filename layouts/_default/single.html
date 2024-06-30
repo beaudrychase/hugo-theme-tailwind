@@ -3,8 +3,8 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="w-full max-w-4xl lg:max-w-5xl">
-  <div class="flex flex-col mt-6 mx-2 md:mx-0 rounded-lg overflow-hidden shadow-md bg-white dark:bg-gray-700">
+<div class="w-full flex items-center justify-center max-w-4xl lg:max-w-5xl">
+  <div class="prose flex flex-col mt-6 mx-2 md:mx-0 rounded-lg overflow-hidden shadow-md bg-white dark:bg-gray-700">
     <div>
       <a href="{{ .RelPermalink }}">
         {{ partial "block/image.html" . }}
@@ -12,7 +12,8 @@
     </div>
     <div class="flex flex-col gap-y-3 p-6">
       <h1 class="text-4xl font-semibold text-slate-800 dark:text-slate-100">
-        <a href="{{ .RelPermalink }}">{{ .Title | .RenderString }}</a>
+        <a class="text-4xl font-semibold text-slate-800 dark:text-slate-100"
+          href="{{ .RelPermalink }}">{{ .Title | .RenderString }}</a>
       </h1>
 
       {{ with .Description }}
